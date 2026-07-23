@@ -18,7 +18,7 @@ function Results({ input }) {
             item.valueEndOfYear -
             item.annualInvestment * item.year -
             input.initialInvestment;
-          const totalAmountInvested = item.valueEndOfYear - totalInterest
+          const totalAmountInvested = item.valueEndOfYear - totalInterest;
           return (
             <tr key={item.year}>
               <td>{item.year}</td>

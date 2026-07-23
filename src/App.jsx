@@ -23,8 +23,11 @@ function App() {
     <>
       <Header />
       <UserInput onChange={changeHandler} userInput={userInput} />
-      {inputValidity ? <Results input={userInput} /> : <div className="center">Please enter a valid duration (greater than 0)</div>}
-      
+      {inputValidity ? (
+        <Results input={userInput} />
+      ) : (
+        <div className="center">Please enter a duration greater than 0</div>
+      )}
     </>
   );
 }
